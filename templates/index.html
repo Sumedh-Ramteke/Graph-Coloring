@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Graph Coloring Options</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+            <style>
+                @keyframes zoomIn {
+                    from {
+                        transform: scale(1);
+                    }
+                    to {
+                        transform: scale(1.1);
+                    }
+                }
+            
+                .zoom-in {
+                    animation-duration: 0.3s;
+                    animation-fill-mode: both;
+                    overflow: hidden;
+                }
+            
+                .zoomed {
+                    animation-name: zoomIn;
+                }
+            
+                .overlay {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+                    padding: 5px;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                }
+            </style>
+    </head>
+    <body>
+        <div class="text-center d-flex align-items-center justify-content-center fs-1 fw-bold" >
+            Select your choice for graph coloring
+        </div>
+        <div class="container text-center d-flex align-items-center justify-content-center fs-1 fw-bold" style="height:700px">
+            <div class="row p-5">
+                <div class="col p-5 rounded-5 zoom-in"
+                    style="position: relative; background-image: url('/static/images/australia-flag.webp');
+                    background-size: cover; background-position: center center; 
+                    background-repeat: no-repeat; height: 250px; width: 475px;"
+                    onmouseover="this.classList.add('zoomed')"
+                    onmouseleave="this.classList.remove('zoomed')"
+                    onclick = "redirectToAustralia()">
+                        <div class="overlay">
+                            Australia
+                        </div>
+                        
+                </div>
+
+
+                <div class="col p-5 rounded-5 zoom-in"
+                style="position: relative; background-image: url('/static/images/india-flag.webp');
+                background-size: cover; background-position: center center; 
+                background-repeat: no-repeat; height: 250px; width: 475px;"
+                onmouseover="this.classList.add('zoomed')"
+                onmouseleave="this.classList.remove('zoomed')"
+                onclick="redirectToIndia()">
+                    <div class="overlay">
+                        India
+                    </div>
+                </div>
+            </div>
+            <script>
+                function redirectToIndia() {
+                    window.location.href = '/india';
+                }
+                function redirectToAustralia() {
+                    window.location.href = '/australia';
+                }
+            </script>
+
+    </body>
+</html>
