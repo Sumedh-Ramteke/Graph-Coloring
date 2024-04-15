@@ -1,3 +1,5 @@
+# Guide to view the Graph Coloring HTML Page
+
 ## Step-1: Activate the virtualenv using the following command:
 `venv/Scripts/activate`
 or if the virtualenv is not installed then run:
@@ -9,3 +11,5 @@ then run the above code.
 
 ## Step-3: Run the program using app.py:
 `py app.py`
+
+Tools used to create this project: python, HTML, CSS, JavaScript, Flask, Jsonify, Bootstrap, Git(obviously).
