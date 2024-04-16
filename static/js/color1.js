@@ -37,5 +37,3 @@ function color_map(colors){
     var tas = document.getElementById('AU-TAS');
     tas.style.fill = colors['Tasmania'];
 }
-
-color_australia();  

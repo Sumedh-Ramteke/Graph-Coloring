@@ -126,6 +126,4 @@ function color_map(colors){
 
     state = document.getElementById('INDL');
     state.style.fill = colors['Delhi'];
-}
-
-color_india();  
+}  
