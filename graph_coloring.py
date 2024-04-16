@@ -58,7 +58,7 @@ class CSP:
 
 def australia_map_coloring():
     vars = ["Western Australia", "Northern Territory", "South Australia", "Queensland", "New South Wales", "Victoria", "Tasmania"]
-    doms = {v: ["Red", "Green", "Blue", "Yellow"] for v in vars}
+    doms = {v: ["Red", "Green", "Blue"] for v in vars}
     cons = {
         "Western Australia": ["Northern Territory", "South Australia"],
         "Northern Territory": ["Western Australia", "South Australia", "Queensland"],
